@@ -10,7 +10,7 @@ import server from "./wundergraph.server";
 import operations from "./wundergraph.operations";
 
 const music = introspect.graphql({
-  apiNameSpace: "music",
+  apiNamespace: "music",
   url: "https://graphbrainz.herokuapp.com/"
 });
 
