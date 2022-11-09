@@ -9,15 +9,16 @@ import {
 import server from "./wundergraph.server";
 import operations from "./wundergraph.operations";
 
-const weather = introspect.graphql({
-  apiNamespace: "weather",
-  url: "https://graphql-weather-api.herokuapp.com/",
+const music = introspect.graphql({
+  apiNameSpace: "music",
+  url: "https://graphbrainz.herokuapp.com/"
 });
 
 const myApplication = new Application({
   name: "app",
-  apis: [weather],
+  apis: [music],
 });
+
 
 // configureWunderGraph emits the configuration
 configureWunderGraphApplication({

@@ -1,0 +1,13 @@
+query ArtistPicSearch($artist: String!) {
+  search {
+    artists(query: $artist, first: 1) {
+      nodes {
+        discogs {
+          images {
+            url
+          }
+        }
+      }
+    }
+  }
+}
