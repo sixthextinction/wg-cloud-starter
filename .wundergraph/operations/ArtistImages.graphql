@@ -1,5 +1,5 @@
 query ArtistPicSearch($artist: String!) {
-  music_search {
+  search: music_search {
     artists(query: $artist, first: 1) {
       nodes {
         discogs {
